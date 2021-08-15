@@ -31,58 +31,73 @@
 
   <main class="content">
     <section class="slideshow">
-      <div class="slideshow__slides slideshow__slides--mobile">
-        <img src="images/mobile-image-hero-1.jpg" alt="picture">
-        <img src="images/mobile-image-hero-2.jpg" alt="picture">
-        <img src="images/mobile-image-hero-3.jpg" alt="picture">
+      <div class="slideshow__carousel" id="viewbox">
+        <div class="slideshow__slides">
+          <img src="images/mobile-image-hero-3.jpg" class="slideshow__slide--mobile" id="lastCopy--mobile" alt="picture">
+          <img src="images/mobile-image-hero-1.jpg" class="slideshow__slide--mobile" alt="picture">
+          <img src="images/mobile-image-hero-2.jpg" class="slideshow__slide--mobile" alt="picture">
+          <img src="images/mobile-image-hero-3.jpg" class="slideshow__slide--mobile" alt="picture">
+          <img src="images/mobile-image-hero-1.jpg" class="slideshow__slide--mobile" id="firstCopy--mobile" alt="picture">
+
+          <img src="images/desktop-image-hero-3.jpg" class="slideshow__slide--desktop" id="lastCopy--desktop" alt="picture">
+          <img src="images/desktop-image-hero-1.jpg" class="slideshow__slide--desktop" alt="picture">
+          <img src="images/desktop-image-hero-2.jpg" class="slideshow__slide--desktop" alt="picture">
+          <img src="images/desktop-image-hero-3.jpg" class="slideshow__slide--desktop" alt="picture">
+          <img src="images/desktop-image-hero-1.jpg" class="slideshow__slide--desktop" id="firstCopy--desktop" alt="picture">
+        </div>
+
+        <div class="slideshow__buttons">
+          <button class="slideshow__button slideshow__button--prev" id="prev"></button>
+          <button class="slideshow__button slideshow__button--next" id="next"></button>
+        </div>
       </div>
 
-      <div class="slideshow__slides slideshow__slides--desktop">
-        <img src="images/desktop-image-hero-1.jpg" alt="picture">
-        <img src="images/desktop-image-hero-2.jpg" alt="picture">
-        <img src="images/desktop-image-hero-3.jpg" alt="picture">
-      </div>
+      <article class="slideshow__articleWrapper slideshow__articleWrapper--active">
+        <div class="slideshow__text">
+          <h1>
+            Discover innovative ways to decorate
+          </h1>
 
-      <article class="slideshow__article slideshow__article--active">
-        <h1>
-          Discover innovative ways to decorate
-        </h1>
-
-        <p>
-          We provide unmatched quality, comfort, and style for property owners across the country. 
-          Our experts combine form and function in bringing your vision to life. Create a room in your 
-          own style with our collection and make your property a reflection of you and what you love.
-        </p>
-        
-        <a href="#">Shop now<svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg></a>
+          <p>
+            We provide unmatched quality, comfort, and style for property owners across the country. 
+            Our experts combine form and function in bringing your vision to life. Create a room in your 
+            own style with our collection and make your property a reflection of you and what you love.
+          </p>
+          
+          <a href="#">Shop now<svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill-rule="nonzero"/></svg></a>
+        </div>
       </article>
 
-      <article class="slideshow__article slideshow__article--inactive">
-        <h1>
-          We are available all across the globe
-        </h1>
+      <article class="slideshow__articleWrapper slideshow__articleWrapper--inactive">
+        <div class="slideshow__text">
+          <h1>
+            We are available all across the globe
+          </h1>
 
-        <p>
-          With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-          Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-          store locator. Any questions? Don't hesitate to contact us today.
-        </p>
-
-        <a href="#">Shop now<svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg></a>
+          <p>
+            With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+            Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+            store locator. Any questions? Don't hesitate to contact us today.
+          </p>
+          
+          <a href="#">Shop now<svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill-rule="nonzero"/></svg></a>
+        </div>
       </article>
 
-      <article class="slideshow__article slideshow__article--inactive">
-        <h1>
-          Manufactured with the best materials
-        </h1>
+      <article class="slideshow__articleWrapper slideshow__articleWrapper--inactive">
+        <div class="slideshow__text">
+          <h1>
+            Manufactured with the best materials
+          </h1>
 
-        <p>
-          Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-          to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-          experience in this industry, we understand what customers want for their home and office.
-        </p>
-
-        <a href="#">Shop now<svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill="#000" fill-rule="nonzero"/></svg></a>
+          <p>
+            Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+            to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+            experience in this industry, we understand what customers want for their home and office.
+          </p>
+          
+          <a href="#">Shop now<svg width="40" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z" fill-rule="nonzero"/></svg></a>
+        </div>
       </article>
     </section>
 
@@ -91,17 +106,19 @@
         <img src="images/image-about-dark.jpg" alt="picture">
       </figure>
 
-      <article class="about__article">
-        <h2>
-          About our furniture
-        </h2>
+      <article class="about__articleWrapper">
+        <div class="about__text">
+          <h2>
+            About our furniture
+          </h2>
 
-        <p>
-          Our multifunctional collection blends design and function to suit your individual taste.
-          Make each room unique, or pick a cohesive theme that best express your interests and what
-          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-          or anything in between. Product specialists are available to help you create your dream space.
-        </p>
+          <p>
+            Our multifunctional collection blends design and function to suit your individual taste.
+            Make each room unique, or pick a cohesive theme that best express your interests and what
+            inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+            or anything in between. Product specialists are available to help you create your dream space.
+          </p>
+        </div>
       </article>
 
       <figure class="about__image">
@@ -111,8 +128,10 @@
   </main>
   
   <footer class="footer">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
   </footer>
 </body>
 </html>
