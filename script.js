@@ -50,6 +50,7 @@ slides.addEventListener("transitionend", function () {
         slides.style.transform = "translateX(" + -viewboxSize * counter + "px";
     }
 });
+// reload the page when the orientation changes
 window.addEventListener("orientationchange", function () {
-    alert(window.location.reload());
+    window.location.reload();
 });

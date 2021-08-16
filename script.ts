@@ -66,5 +66,5 @@ slides.addEventListener("transitionend", ()=> {
 
 // reload the page when the orientation changes
 window.addEventListener("orientationchange", ()=> {
-    alert(window.location.reload());
+    window.location.reload();
 });

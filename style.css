@@ -241,7 +241,7 @@ body {
 
 .footer {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   text-align: center;
 }
@@ -294,7 +294,8 @@ body {
             flex-direction: row;
   }
   .slideshow__carousel {
-    overflow: clip;
+    overflow: hidden;
+    min-width: 840px;
   }
   .slideshow__buttons {
     position: absolute;
