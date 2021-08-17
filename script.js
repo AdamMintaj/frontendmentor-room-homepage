@@ -54,3 +54,7 @@ slides.addEventListener("transitionend", function () {
 window.addEventListener("orientationchange", function () {
     window.location.reload();
 });
+window.addEventListener("resize", function () {
+    window.location.reload();
+    console.log("resize");
+});

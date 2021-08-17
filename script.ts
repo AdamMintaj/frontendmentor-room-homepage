@@ -24,7 +24,6 @@ const carouselImagesDesktop = document.querySelectorAll(".slideshow__slide--desk
     //counter
 let counter: number = 1; 
 
-
 slides.style.transform = "translateX("+ -viewboxSize * counter +"px)";
 
     // display the next/prev slide
@@ -67,4 +66,9 @@ slides.addEventListener("transitionend", ()=> {
 // reload the page when the orientation changes
 window.addEventListener("orientationchange", ()=> {
     window.location.reload();
+});
+
+window.addEventListener("resize", ()=> {
+    window.location.reload();
+    console.log("resize");
 });

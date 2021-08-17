@@ -92,14 +92,11 @@ body {
 	}
 
 	&__buttons {
-		width: auto;
+		width: 100%;
 		display: flex;
-		position: static;
-		grid-row: 2/3;
-		grid-column: 2/3;
-		align-self: end;
-		justify-self: end;
-		z-index: 1;
+		position: relative;
+		justify-content: flex-end;
+		bottom: 56px;
 	}
 
 	&__button {
@@ -130,6 +127,10 @@ body {
 		grid-row: 1/3;
 		grid-column: 1/3;
 		display: flex;
+
+		img {
+			max-width: 100%;
+		}
 	}
 
 	&__slide--desktop {
@@ -144,7 +145,7 @@ body {
 
 	&__text {
 		width: 84%;
-		margin: 6rem auto;
+		margin: 3rem auto 6rem;
 
 		h1 {
 			font-size: 2rem;
@@ -211,7 +212,6 @@ body {
 
 .footer {
 	position: absolute;
-	bottom: 0;
 	width: 100%;
 	text-align: center;
 }
@@ -219,6 +219,12 @@ body {
 /*Desktop version*/
 
 @media only screen and (min-width: 376px) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+
 	.header {
 		position: absolute;
 		display: flex;
@@ -276,8 +282,8 @@ body {
 		}
 
 		&__buttons {
-			position: absolute;
-			transform: translate(112px, 0px);
+			// position: absolute;
+			// transform: translate(112px, 0px);
 		}
 
 		&__slides {
@@ -318,5 +324,9 @@ body {
 		&__text {
 			margin: 6rem auto auto;
 		}
+	}
+
+	.footer {
+		// align-self: flex-end;
 	}
 }
