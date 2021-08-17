@@ -30,6 +30,7 @@ html {
 
 body {
 	background-color: white;
+	display: flex;
 }
 
 .header {
@@ -214,6 +215,18 @@ body {
 	position: absolute;
 	width: 100%;
 	text-align: center;
+	color: black;
+	align-self: end;
+
+	a {
+		text-decoration: none;
+		color: $darkGrey;
+		transition: 0.4s;
+
+		&:hover {
+			color: $grey;
+		}
+	}
 }
 
 /*Desktop version*/
@@ -282,8 +295,12 @@ body {
 		}
 
 		&__buttons {
-			// position: absolute;
-			// transform: translate(112px, 0px);
+			width: auto;
+			display: flex;
+			position: absolute;
+			align-self: flex-end;
+			bottom: auto;
+			left: 840px;
 		}
 
 		&__slides {

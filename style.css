@@ -14,6 +14,9 @@ html {
 
 body {
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header {
@@ -241,6 +244,21 @@ body {
   position: absolute;
   width: 100%;
   text-align: center;
+  color: black;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #454545;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.footer a:hover {
+  color: #a1a1a1;
 }
 
 /*Desktop version*/
@@ -301,6 +319,17 @@ body {
   .slideshow__carousel {
     overflow: hidden;
     min-width: 840px;
+  }
+  .slideshow__buttons {
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    bottom: auto;
+    left: 840px;
   }
   .slideshow__slides {
     max-width: 840px;
