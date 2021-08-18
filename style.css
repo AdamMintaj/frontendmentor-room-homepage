@@ -17,6 +17,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .header {
@@ -93,6 +97,8 @@ body {
 
 .header .nav--active {
   bottom: 0;
+  -webkit-box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.5);
 }
 
 .slideshow {
@@ -107,12 +113,6 @@ body {
 
 .slideshow__carousel {
   overflow: hidden;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
 }
 
 .slideshow__buttons {
@@ -246,8 +246,7 @@ body {
   text-align: center;
   color: black;
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+      align-self: flex-end;
 }
 
 .footer a {
@@ -263,14 +262,6 @@ body {
 
 /*Desktop version*/
 @media only screen and (min-width: 376px) {
-  body {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-  }
   .header {
     position: absolute;
     display: -webkit-box;
@@ -308,6 +299,9 @@ body {
     margin: 6px auto 0;
   }
   .header .nav__button {
+    display: none;
+  }
+  .header .nav__overlay {
     display: none;
   }
   .slideshow {

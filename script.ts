@@ -1,14 +1,3 @@
-// show & hide navbar in mobile version
-const headerButton = document.getElementById("headerButton")!;
-const navButton = document.getElementById("navButton")!;
-
-function showNav() {
-    document.querySelector("nav")!.classList.toggle("nav--active");
-}
-
-headerButton.addEventListener("click", showNav);
-navButton.addEventListener("click", showNav);
-
 // make the slides move
 
     // buttons
@@ -24,6 +13,7 @@ const carouselImagesDesktop = document.querySelectorAll(".slideshow__slide--desk
     //counter
 let counter: number = 1; 
 
+    //set the first image as an actual first (not the copy of the last)
 slides.style.transform = "translateX("+ -viewboxSize * counter +"px)";
 
     // display the next/prev slide
@@ -62,6 +52,28 @@ slides.addEventListener("transitionend", ()=> {
         slides.style.transform = "translateX(" + -viewboxSize * counter + "px";
     }
 });
+
+// show & hide navbar in mobile version
+const headerButton = document.getElementById("headerButton")!;
+const navButton = document.getElementById("navButton")!;
+const nav = document.querySelector("nav")!;
+
+function showNav() {
+    nav.classList.toggle("nav--active");
+    
+    // disable slider buttons when the navbar is visible
+    if (nav.classList.contains("nav--active")) {
+        prevBtn.style.pointerEvents = "none";
+        nextBtn.style.pointerEvents = "none";
+    }
+    else {
+        prevBtn.style.pointerEvents = "auto";
+        nextBtn.style.pointerEvents = "auto";
+    }
+}
+
+headerButton.addEventListener("click", showNav);
+navButton.addEventListener("click", showNav);
 
 // reload the page when the orientation changes
 window.addEventListener("orientationchange", ()=> {
