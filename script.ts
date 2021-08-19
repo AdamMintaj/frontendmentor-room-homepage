@@ -22,7 +22,7 @@ let counter: number = 1;
 slides.style.transform = "translateX("+ -slidesViewboxSize * counter +"px)";
 articles.style.transform = "translateX("+ -articlesViewboxSize * counter +"px)";
 
-alert(articlesViewboxSize);
+// alert(articlesViewboxSize);
 
     // display the next/prev slide and article
 function nextSlide () {
