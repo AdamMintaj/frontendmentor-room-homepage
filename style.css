@@ -319,10 +319,11 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    width: 100%;
   }
   .slideshow__slidesCarousel {
     overflow: hidden;
-    min-width: 840px;
+    width: 60%;
   }
   .slideshow__slides {
     max-width: 840px;
@@ -344,20 +345,22 @@ body {
     -ms-flex-item-align: end;
         align-self: flex-end;
     bottom: auto;
-    left: 840px;
+    left: 60%;
   }
   .slideshow__articlesCarousel {
     overflow: hidden;
+    width: 40%;
   }
   .slideshow__articles {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 100%;
   }
   .slideshow__article {
     min-width: 100%;
-    margin: 10rem 0 auto;
+    padding: 18% 0 0;
   }
   .slideshow__article h1 {
     font-size: 2.75rem;
@@ -381,7 +384,6 @@ body {
     transition: 0.4s;
     display: block;
     width: 70%;
-    margin: 0 auto;
   }
   .slideshow__article a:hover {
     color: #a1a1a1;
