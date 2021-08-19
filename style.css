@@ -348,6 +348,7 @@ body {
   }
   .slideshow__articlesCarousel {
     overflow: hidden;
+    width: 100%;
   }
   .slideshow__articles {
     width: 100%;
