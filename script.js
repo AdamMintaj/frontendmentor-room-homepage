@@ -1,4 +1,4 @@
-// make the slides move
+// slider
 // buttons
 var prevBtn = document.getElementById("prev");
 var nextBtn = document.getElementById("next");

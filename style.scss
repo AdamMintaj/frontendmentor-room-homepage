@@ -290,6 +290,10 @@ body {
 		}
 	}
 
+	.content {
+		max-width: 100%;
+	}
+
 	.slideshow {
 		flex-direction: row;
 
@@ -324,7 +328,8 @@ body {
 		}
 
 		&__articles {
-			width: calc(100vw - 840px /* - 17px*/);
+			width: 100%;
+			// width: calc(100vw - 840px /* - 17px*/);
 			display: flex;
 		}
 

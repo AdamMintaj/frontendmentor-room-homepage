@@ -311,6 +311,9 @@ body {
   .header .nav__overlay {
     display: none;
   }
+  .content {
+    max-width: 100%;
+  }
   .slideshow {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -347,7 +350,7 @@ body {
     overflow: hidden;
   }
   .slideshow__articles {
-    width: calc(100vw - 840px);
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
