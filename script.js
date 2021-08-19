@@ -15,6 +15,7 @@ var counter = 1;
 //set the first image and article as an actual first (not the copy of the last)
 slides.style.transform = "translateX(" + -slidesViewboxSize * counter + "px)";
 articles.style.transform = "translateX(" + -articlesViewboxSize * counter + "px)";
+alert(articlesViewboxSize);
 // display the next/prev slide and article
 function nextSlide() {
     if (counter >= 4) {
